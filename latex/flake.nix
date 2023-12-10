@@ -18,7 +18,7 @@
             # Other packages here
           ;
         };
-        deps = with pkgs; [ tex coreutils just bash ];
+        deps = with pkgs; [ tex coreutils just bash texlab ];
       in rec {
         devShells.default = pkgs.mkShell {
           buildInputs = deps;
